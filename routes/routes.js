@@ -1,8 +1,9 @@
-const feedback = require("../controllers/feedback");
+const feedback = require("../controllers/feedbackController");
 const express = require("express");
 const router = express.Router();
 
-router.post('/create', feedback.createFeedback)
+router.get('/', feedback.getAllFeedbacks);
+router.post('/create', feedback.createFeedback);
 
 router.all('*', function(req, res) {
   res.send("Error 404");
