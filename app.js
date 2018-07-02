@@ -1,5 +1,4 @@
 const cookieParser = require('cookie-parser');
-const routes = require("./routes/routes");
 const bodyParser = require('body-parser');
 const express = require("express");
 const path = require('path');
@@ -22,9 +21,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// configure routes
-app.use("/", routes);
 app.use("/static", express.static(path.join(__dirname, "public")));
-
 
 module.exports = app;
