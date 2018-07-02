@@ -1,0 +1,31 @@
+{
+  "name": "feedback",
+  "version": "1.0.0",
+  "description": "feedback as a service",
+  "main": "src/js/index.js",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp build"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Kre",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-connect": "^5.5.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^3.0.0"
+  },
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "gulp": "^3.9.1",
+    "jshint": "^2.9.5"
+  }
+}
