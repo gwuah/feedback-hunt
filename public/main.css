@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+	/* font-family: Mina; */
+	/* border: 1px solid red; */
+}
+
+.header-parent {
+	/* border: 2px solid green; */
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.header {
+	max-width: 55%;
+	height: 57px;
+	margin: 0 auto;
+	padding: 0px 25px;
+}
+
+.product-name {
+	position: relative;
+	bottom: 7px;
+	font-size: 17px;
+	font-weight: bold;
+	margin-left: 6px;
+	letter-spacing: 0.6px;
+}
+
+.logo {
+	height: 40px;
+	position: relative;
+	top: 8px;
+}
+
+.month {
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 22px;
+	padding-bottom: 10px;
+	font-family: Ubuntu;
+	margin-left: 20px;
+}
+
+.user-ctrl {
+	/* display: inline-block; */
+	float: right;
+}
+.user-avatar {
+	border: 1px solid black;
+	padding: 2px;
+	height: 30px;
+	float: right;
+	position: relative;
+	top: 9px;
+	border-radius: 50%;
+}
+
+.username {
+	float: right;
+	position: relative;
+	right: 93px;
+	top: 15px;
+	color: #999;
+	font-size: 15px;
+}
+
+.username:hover {
+	color: black;
+}
+
+.body-parent {
+	width: 55%;
+	margin: 0 auto;
+	margin-top: 70px;
+	/* border: 1px solid green; */
+	overflow: hidden;
+	/* padding: 2px 0px 3px 14px */
+}
+
+.mina {
+	font-family: Mina;
+}
+
+
+.ctrl-panel {
+	float: left;
+	width: 20%;
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+	/* padding: 8px; */
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+
+.ctrl-panel ul li {
+	padding: 9px
+}
+
+.ctrl-panel a {
+	color: black;
+	text-decoration: none;
+	/* border: 1px solid green; */
+	/* padding: 10px; */
+	font-size: 15px;
+	box-sizing: border-box;
+}
+
+.ctrl-panel li:hover {
+	background-color: rgba(153, 153, 153, 0.1)
+}
+
+.ctrl-panel svg {
+	height: 17px;
+	position: relative;
+	top: 3px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	/* border: 1px solid red; */
+}
+
+.feedback-container {
+	float: right;
+	width: 73%;
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+	margin-right: 36px;
+	/* margin-top: 50px; */
+	margin-bottom: 60px;
+	border-bottom: none;
+}
+
+.feedback{
+	border-bottom: 1px solid rgb(234, 234, 234);
+	padding: 10px ;
+	overflow: hidden;
+}
+
+.feedback:hover {
+	cursor: pointer;
+	background-color: rgba(153, 153, 153, 0.1)
+}
+
+.avatar-container {
+	/* border: 2px solid pink; */
+	/* display: inline-block; */
+	width: 4%;
+	margin-right: 13px;
+	float: left;
+}
+
+.client-avatar {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+
+.feedback-body {
+	/* display: inline-block; */
+	width: 91%;
+	font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	position: relative;
+	top: 10px;
+	letter-spacing: 0.1px;
+	margin-left: 10px;
+	float: left;
+}
+
+.message {
+	float: left;
+}
+
+.created {
+	float: right;
+	color: rgb(153, 153, 153);
+	margin-right: 10px;
+}
+
+.options {
+	float: right;
+}
+
+.options svg {
+	height: 17px;
+}
