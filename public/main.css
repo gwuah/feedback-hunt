@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+
 	/* font-family: Mina; */
 	/* border: 1px solid red; */
 }
@@ -73,7 +74,8 @@
 	margin: 0 auto;
 	margin-top: 70px;
 	/* border: 1px solid green; */
-	overflow: hidden;
+	/* overflow: hidden; */
+	/* border: 3px solid green */
 	/* padding: 2px 0px 3px 14px */
 }
 
@@ -119,10 +121,6 @@ ul {
 	list-style-type: none;
 }
 
-ul li {
-	/* border: 1px solid red; */
-}
-
 .feedback-container {
 	float: right;
 	width: 73%;
@@ -137,7 +135,7 @@ ul li {
 .feedback{
 	border-bottom: 1px solid rgb(234, 234, 234);
 	padding: 10px ;
-	overflow: hidden;
+	position: relative;
 }
 
 .feedback:hover {
@@ -189,4 +187,52 @@ ul li {
 
 .options svg {
 	height: 17px;
+	color: black
+}
+
+/* #c99 {
+} */
+
+.overflow-hidden
+{
+		overflow: hidden;
+		/* border: 3px solid red; */
+}
+
+.faq-ctrl-panel {
+	position: absolute;
+	width: 150px;
+	right: -160px;
+	top: -9px;
+	height:75px;
+	/* bottom: -56px; */
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+	/* padding: 4px; */
+	box-sizing: border-box;
+	font-family: Roboto;
+	background-color:  rgba(153, 153, 153, 0.1);
+}
+
+.faq-ctrl-panel ul li {
+	padding: 6px
+}
+
+.faq-ctrl-panel a {
+	color: black;
+	text-decoration: none;
+	/* border: 1px solid green; */
+	/* padding: 10px; */
+	font-size: 15px;
+	box-sizing: border-box;
+}
+
+.faq-ctrl-panel li:hover {
+	background-color: rgba(153, 153, 153, 0.1)
+}
+
+.faq-ctrl-panel svg {
+	height: 17px;
+	position: relative;
+	top: 3px;
 }
