@@ -15,7 +15,11 @@ router.post('/signup', user.signup)
 router.post('/login', user.login)
 router.get('/feedback/:ownerId', feedback.getFeedbackOfUser);
 
+router.put('/feedback/:id', feedback.markAsRead);
+router.delete('/feedback/:id', feedback.deleteFeedback)
 
+/* feedback controller */
+router.get('/feedback', feedback.getAllFeedbacks)
 
 router.all('*', function(req, res) {
   res.send("Error 404");

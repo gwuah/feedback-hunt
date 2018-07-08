@@ -28,7 +28,7 @@ exports.createFeedback = async (req, res) => {
       })
     }
     console.log(`saving message to ${req.params.id}`)
-    res.io.of(req.params.id).emit('message', `cllient says ${req.body.message}`)
+    res.io.of(req.params.id).emit('feedback', `${JSON.stringify(fb)}`)
     res.status(200).json({
       success: true,
       fb
@@ -47,7 +47,7 @@ exports.getAllFeedbacks = async (req, res) => {
 
   try {
     const feedbacks = await Feedback.find({});
-    console.log(feedbacks);
+    // console.log(feedbacks);
     res.status(200).json({
       success: true,
       feedbacks
@@ -67,6 +67,41 @@ exports.getFeedbackOfUser = async (req, res) => {
     res.status(200).json({
       sucess: true,
       feedbacks
+    })
+  } catch (error) {
+    res.status(500).json({
+      sucess: false,
+      err: error
+    })
+  }
+}
+
+exports.markAsRead = async (req, res) => {
+
+  try {
+    const feedback = await Feedback.findOneAndUpdate({
+      _id: req.params.id
+    }, {read: true});
+    res.status(200).json({
+      sucess: true,
+      feedback
+    })
+  } catch (error) {
+    res.status(500).json({
+      sucess: false,
+      err: error
+    })
+  }
+}
+
+exports.deleteFeedback = async (req, res) => {
+  try {
+    const feedback = await Feedback.findOneAndRemove({
+      _id: req.params.id
+    });
+    res.status(200).json({
+      sucess: true,
+      feedback
     })
   } catch (error) {
     res.status(500).json({
