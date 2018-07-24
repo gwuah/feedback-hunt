@@ -9,13 +9,13 @@ const io = require('socket.io')(http);
 
 
 io.on('connection', function(socket){
-  console.log(`connection recieved from ${socket.id}`);
+  // console.log(`connection recieved from ${socket.id}`);
 
-  io.of('user').emit('message', `${socket.id} joined`)
+  // io.of('user').emit('message', `${socket.id} joined`)
 
-  socket.on('disconnect', function(){
-    console.log(`connection fell from ${socket.id}`)
-  });
+  // socket.on('disconnect', function(){
+  //   console.log(`connection fell from ${socket.id}`)
+  // });
 });
 
 app.use((req, res, next) => {
